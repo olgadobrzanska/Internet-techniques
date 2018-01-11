@@ -1,0 +1,43 @@
+nazwisko { 
+	color: red;
+	text-decoration: underline;
+}
+
+imie{
+	color: green;
+	}
+
+email{
+	font-style: italic;
+	color: blue;
+}
+
+grupa {
+	border-style: double;
+	display: block;
+	padding: 13px;
+	margin-bottom: 8px;
+	width: 284px;
+	}
+
+osoba {
+	display: block; 
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	width:270px;
+	padding:7px;
+	margin-bottom: 7px;
+}
+
+* > :last-child { margin-bottom: 0 !important; }
+
+osoba:nth-child(odd) {background: WhiteSmoke;}
+osoba:nth-child(even) {background: yellow;}
+
+zajecia{ 
+	padding-left: 50px;
+	padding-top: 10px;
+	font-family: Arial;
+
+}

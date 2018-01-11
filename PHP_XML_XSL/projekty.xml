@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="zajecia.xsl"?>
+<projekty>
+	<projekt>
+		<temat>Projekt numer jeden</temat>
+		<kierownik>
+			<nazwisko>Nowak</nazwisko>
+			<imie>Karol</imie>
+			<email>karol@gm.pl</email>
+		</kierownik>
+		<termin>2017-10-13</termin>
+		<zadanie>
+			<temat>Aplikacja nowa</temat>
+			<projektanci>
+				<uczestnik>
+					<nazwisko>Janek</nazwisko>
+					<imie>Jan</imie>
+					<email>po@hm.com</email>
+				</uczestnik>
+				<uczestnik>
+					<nazwisko>Kowal</nazwisko>
+					<imie>Zygmunt</imie>
+					<email>oll@hm.com</email>
+				</uczestnik>
+				<uczestnik>
+					<nazwisko>Nowak</nazwisko>
+					<imie>Paulo</imie>
+					<email>paulo@hm.com</email>
+				</uczestnik>
+			</projektanci>
+			<termin-zakonczenia>2017-01-01</termin-zakonczenia>
+		</zadanie>
+	</projekt>
+		<projekt>
+		<temat>Projekt numer dwa</temat>
+		<kierownik>
+			<nazwisko>Nowak</nazwisko>
+			<imie>Karol</imie>
+			<email>karol@gm.pl</email>
+		</kierownik>
+		<termin>2017-11-03</termin>
+		<zadanie>
+			<temat>Aplikacja poprawiona</temat>
+			<projektanci>
+				<uczestnik>
+					<nazwisko>Kazimierczyk</nazwisko>
+					<imie>Kazimierz</imie>
+					<email>kazimierz@hm.com</email>
+				</uczestnik>
+				<uczestnik>
+					<nazwisko>Kowalski</nazwisko>
+					<imie>Andrzej</imie>
+					<email>kowalski@hm.com</email>
+				</uczestnik>
+				<uczestnik>
+					<nazwisko>Nowak</nazwisko>
+					<imie>Albert</imie>
+					<email>albert@hm.com</email>
+				</uczestnik>
+			</projektanci>
+			<termin-zakonczenia>2017-05-05</termin-zakonczenia>
+		</zadanie>
+	</projekt>
+</projekty>
+
+

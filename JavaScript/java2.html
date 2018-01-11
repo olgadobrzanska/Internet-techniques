@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<link rel="StyleSheet" href="java.css" type="text/css" />
+<title>JavaScript</title>
+</head>
+<body>
+
+<h3 align="center">Rysowanie kola</h3>
+
+<form name="form">
+	<table>
+		<tr>
+			<td>Podaj <br>współrzędne <br>środka</td>
+			<td><input type="text" value="0" name="field1"></td>
+			<td><input type="text" value="0" name="field2"></td>
+		</tr>
+		<tr>
+			<td>Podaj <br>promień</td>
+			<td><input type="text"  value="0" name="field3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Wykonaj"
+			onclick="draw()"></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</form>
+
+<br/>
+
+<canvas id="koloCSV" id="a" width="450" height="300" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>  
+
+
+<svg id="koloSVG" width="450" height="300" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</svg>  
+
+<script type="text/javascript"> 
+
+
+function draw(){
+	var koloCSV = document.getElementById("koloCSV");
+	var X = document.form.field1.value;
+	var Y = document.form.field2.value;
+	var R = document.form.field3.value;
+	var a_canvas = document.getElementById("a");
+
+	if(Number(parseInt(X)+parseInt(R)) > Number(koloCSV.width) || Number(parseInt(Y) + parseInt(R)) > Number(koloCSV.height) || Number(parseInt(X) - parseInt(R)) < 0 ||  Number(parseInt(Y) - parseInt(R)) < 0){
+		alert("Zmien promien!");
+	}
+	else{
+		if(koloCSV.getContext("2d")){
+			var ctx = koloCSV.getContext("2d");
+			ctx.beginPath();
+			ctx.strokeStyle='#A52A2A';
+			ctx.arc(X,Y,R,0,2*Math.PI);
+			ctx.stroke();
+		}
+		var koloSVG = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+		koloSVG.setAttributeNS(null, "cx", X);
+		koloSVG.setAttributeNS(null, "cy", Y);
+		koloSVG.setAttributeNS(null, "r", R);
+		koloSVG.setAttributeNS(null, "fill",  "#4169E1");
+		koloSVG.setAttributeNS(null, "stroke",  "#4169E1");
+		document.getElementById("koloSVG").appendChild(koloSVG);
+	}
+
+}
+</script>
+
+</body>
+</html>
