@@ -1,0 +1,56 @@
+header {
+	text-align: center;
+	outline: 3px solid red;
+	border-collapse: collapse;
+}
+
+h1 {
+	border-collapse: collapse;
+	outline: 3px solid red;
+	text-align: center;
+}
+
+table {
+	position:absolute;
+	left: 150px;
+    outline: 2px solid blue;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+thead {
+	text-align: center;
+	font-weight: bold;
+	background-color: Aqua;
+}
+
+tbody {
+	color: black;
+}
+.main {
+	font-weight: bold;
+	background-color: Plum;
+}
+.part1 {
+	background-color: AliceBlue;
+}
+.part2 {
+	background-color: LawnGreen;
+}
+
+td {
+	color: black;
+}
+.i_n {
+	text-align: left;
+}
+
+tfoot {
+	background-color: BurlyWood;
+}
+
+img {
+	position:absolute;
+	right: 150px;
+}
+
